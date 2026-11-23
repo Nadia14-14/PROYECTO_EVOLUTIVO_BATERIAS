@@ -99,7 +99,3 @@ soh_symbolic_regression/
 └── artifacts/                 # Resultados, métricas CSV/JSON, código C y figuras
 
 ```
-
-```
-
-
