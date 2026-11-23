@@ -1,0 +1,37 @@
+{
+  "best_model_battery": "B0005",
+  "best_model_test_RMSE": 1.5059287049298695,
+  "best_expression": "mul(psqrt(mul(sub(mul(-4.309530735129173, t_cc), sub(sub(4.1153549468612205, cycle), cycle)), mul(-1.6014231282052172, add(t_cc, add(2.3550359315918, v_fix))))), add(add(4.920500132884868, add(t_cc, add(2.3550359315918, v_fix))), mul(1.3270760075927237, mul(sub(4.1153549468612205, t_cv), 1.3270760075927237))))",
+  "c_export_path": "C:\\Users\\HP\\Pictures\\UNI  NAD\\SEMESTRES \ud83e\udd7a\\NOVENO SEMESTRE\\COMPUTO EVOLUTIVO\\soh_symbolic_regression\\artifacts\\bms_soh_model.c",
+  "python_c_equivalence": {
+    "max_abs_error_float32": 2.440226106159571e-05,
+    "mean_abs_error_float32": 7.503304425461148e-06,
+    "host_ctypes_latency_us": 1.5645,
+    "n_nodes": 34
+  },
+  "robustness_noise_and_oor": {
+    "noise_1pct_RMSE_median": 1.5075439481390651,
+    "noise_1pct_RMSE_iqr": 0.012222713323295498,
+    "noise_2pct_RMSE_median": 1.5118568811138915,
+    "noise_2pct_RMSE_iqr": 0.02527245119182142,
+    "noise_5pct_RMSE_median": 1.5737496215458315,
+    "noise_5pct_RMSE_iqr": 0.07731751273049325,
+    "oor_all_finite": true,
+    "oor_raw_min": 22.918497291906032,
+    "oor_raw_max": 111.48038160425793
+  },
+  "wilcoxon_tests": {
+    "GP_vs_Linear": {
+      "stat": 4.0,
+      "p_value": 0.875
+    },
+    "GP_vs_Poly_Deg2": {
+      "stat": 0.0,
+      "p_value": 0.125
+    },
+    "GP_vs_MLP_BlackBox": {
+      "stat": 5.0,
+      "p_value": 1.0
+    }
+  }
+}

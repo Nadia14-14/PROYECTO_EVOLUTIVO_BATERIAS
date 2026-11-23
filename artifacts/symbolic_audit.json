@@ -1,0 +1,41 @@
+{
+  "simplified_expr": "(t_cc - 1.7611307299282429*t_cv + v_fix + 14.523214125956174)*sqrt(Abs((-2*cycle + 4.309530735129173*t_cc + 4.1153549468612205)*(1.6014231282052172*t_cc + 1.6014231282052172*v_fix + 3.7714090086054285)))",
+  "latex_expr": "\\left(t_{cc} - 1.7611307299282429 t_{cv} + v_{fix} + 14.523214125956174\\right) \\sqrt{\\left|{\\left(- 2 cycle + 4.309530735129173 t_{cc} + 4.1153549468612205\\right) \\left(1.6014231282052172 t_{cc} + 1.6014231282052172 v_{fix} + 3.7714090086054285\\right)}\\right|}",
+  "gradients": {
+    "t_cc": {
+      "partial_derivative_latex": "\\begin{cases} \\sqrt{\\left|{\\left(- 2 cycle + 4.309530735129173 t_{cc} + 4.1153549468612205\\right) \\left(1.6014231282052172 t_{cc} + 1.6014231282052172 v_{fix} + 3.7714090086054285\\right)}\\right|} & \\text{for}\\: \\left(- 2 cycle + 4.309530735129173 t_{cc} + 4.1153549468612205\\right) \\left(1.6014231282052172 t_{cc} + 1.6014231282052172 v_{fix} + 3.7714090086054285\\right) = 0 \\\\\\frac{\\left(2 \\left(- 2 cycle + 4.309530735129173 t_{cc} + 4.1153549468612205\\right) \\left(1.6014231282052172 t_{cc} + 1.6014231282052172 v_{fix} + 3.7714090086054285\\right) + \\left(- 3.2028462564104344 cycle + 13.802764381894179 t_{cc} + 6.9013821909470895 v_{fix} + 22.843427630005449\\right) \\left(t_{cc} - 1.7611307299282429 t_{cv} + v_{fix} + 14.523214125956174\\right)\\right) \\left(- 2 cycle + 4.309530735129173 t_{cc} + 4.1153549468612205\\right) \\left(1.6014231282052172 t_{cc} + 1.6014231282052172 v_{fix} + 3.7714090086054285\\right)}{2 \\left|{\\sqrt{\\left(- 2 cycle + 4.309530735129173 t_{cc} + 4.1153549468612205\\right) \\left(1.6014231282052172 t_{cc} + 1.6014231282052172 v_{fix} + 3.7714090086054285\\right)}}\\right| \\left|{\\left(- 2 cycle + 4.309530735129173 t_{cc} + 4.1153549468612205\\right) \\left(1.6014231282052172 t_{cc} + 1.6014231282052172 v_{fix} + 3.7714090086054285\\right)}\\right|} & \\text{otherwise} \\end{cases}",
+      "mean_sensitivity": 49.13530041625931,
+      "median_abs_sensitivity": 49.01200526604557,
+      "pct_non_positive": 0.0,
+      "pct_non_negative": 100.0
+    },
+    "t_cv": {
+      "partial_derivative_latex": "- 1.7611307299282429 \\sqrt{\\left|{\\left(- 2 cycle + 4.309530735129173 t_{cc} + 4.1153549468612205\\right) \\left(1.6014231282052172 t_{cc} + 1.6014231282052172 v_{fix} + 3.7714090086054285\\right)}\\right|}",
+      "mean_sensitivity": -9.328090756838444,
+      "median_abs_sensitivity": 9.370513736516411,
+      "pct_non_positive": 100.0,
+      "pct_non_negative": 0.0
+    },
+    "t_max": {
+      "partial_derivative_latex": "0",
+      "mean_sensitivity": 0.0,
+      "median_abs_sensitivity": 0.0,
+      "pct_non_positive": 100.0,
+      "pct_non_negative": 100.0
+    },
+    "v_fix": {
+      "partial_derivative_latex": "\\begin{cases} \\sqrt{\\left|{\\left(- 2 cycle + 4.309530735129173 t_{cc} + 4.1153549468612205\\right) \\left(1.6014231282052172 t_{cc} + 1.6014231282052172 v_{fix} + 3.7714090086054285\\right)}\\right|} & \\text{for}\\: \\left(- 2 cycle + 4.309530735129173 t_{cc} + 4.1153549468612205\\right) \\left(1.6014231282052172 t_{cc} + 1.6014231282052172 v_{fix} + 3.7714090086054285\\right) = 0 \\\\\\frac{\\left(\\left(- 3.2028462564104344 cycle + 6.9013821909470895 t_{cc} + 6.5904245926773111\\right) \\left(t_{cc} - 1.7611307299282429 t_{cv} + v_{fix} + 14.523214125956174\\right) + 2 \\left(- 2 cycle + 4.309530735129173 t_{cc} + 4.1153549468612205\\right) \\left(1.6014231282052172 t_{cc} + 1.6014231282052172 v_{fix} + 3.7714090086054285\\right)\\right) \\left(- 2 cycle + 4.309530735129173 t_{cc} + 4.1153549468612205\\right) \\left(1.6014231282052172 t_{cc} + 1.6014231282052172 v_{fix} + 3.7714090086054285\\right)}{2 \\left|{\\sqrt{\\left(- 2 cycle + 4.309530735129173 t_{cc} + 4.1153549468612205\\right) \\left(1.6014231282052172 t_{cc} + 1.6014231282052172 v_{fix} + 3.7714090086054285\\right)}}\\right| \\left|{\\left(- 2 cycle + 4.309530735129173 t_{cc} + 4.1153549468612205\\right) \\left(1.6014231282052172 t_{cc} + 1.6014231282052172 v_{fix} + 3.7714090086054285\\right)}\\right|} & \\text{otherwise} \\end{cases}",
+      "mean_sensitivity": 16.844263857414568,
+      "median_abs_sensitivity": 16.98102334266067,
+      "pct_non_positive": 0.0,
+      "pct_non_negative": 100.0
+    },
+    "cycle": {
+      "partial_derivative_latex": "\\begin{cases} 0 & \\text{for}\\: \\left(- 2 cycle + 4.309530735129173 t_{cc} + 4.1153549468612205\\right) \\left(1.6014231282052172 t_{cc} + 1.6014231282052172 v_{fix} + 3.7714090086054285\\right) = 0 \\\\- \\frac{\\left(- 2 cycle + 4.309530735129173 t_{cc} + 4.1153549468612205\\right) \\left(1.6014231282052172 t_{cc} + 1.6014231282052172 v_{fix} + 3.7714090086054285\\right) \\left(3.2028462564104344 t_{cc} + 3.2028462564104344 v_{fix} + 7.5428180172108569\\right) \\left(t_{cc} - 1.7611307299282429 t_{cv} + v_{fix} + 14.523214125956174\\right)}{2 \\left|{\\left(\\left(- 2 cycle + 4.309530735129173 t_{cc} + 4.1153549468612205\\right) \\left(1.6014231282052172 t_{cc} + 1.6014231282052172 v_{fix} + 3.7714090086054285\\right)\\right)^{\\frac{3}{2}}}\\right|} & \\text{otherwise} \\end{cases}",
+      "mean_sensitivity": -14.98587133658155,
+      "median_abs_sensitivity": 14.789054357950587,
+      "pct_non_positive": 100.0,
+      "pct_non_negative": 0.0
+    }
+  }
+}
